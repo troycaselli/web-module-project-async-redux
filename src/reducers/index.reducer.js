@@ -17,7 +17,7 @@ const initialState = {
         image_link: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fairy_bluebird_male_-_Irena_puella.jpg",
         id: 69
     },
-    isFetching: false,
+    isFetching: true,
     error: ''
 }
 
