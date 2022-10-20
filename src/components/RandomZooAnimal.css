@@ -1,0 +1,64 @@
+header {
+    /* Photo by <a href="https://unsplash.com/@eelco_bohtlingk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eelco Böhtlingk</a> on <a href="https://unsplash.com/s/photos/wilderness?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+    background-image: url('../images/wilderness.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+}
+header h1,
+header h2,
+header h3 {
+    backdrop-filter: blur(2px);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+}
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1rem;
+}
+#fetching h2 {
+    color: #e7f3cf;
+;
+}
+#error h2,
+#error h3 {
+    color: rgb(217, 59, 59);
+}
+header button {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #e7f3cf;
+    background-color: rgb(105, 50, 15);
+    color: #e7f3cf;
+    transition: 0.5s;
+}
+header button:hover {
+    background-color: #e7f3cf;
+    color: rgb(105, 50, 15);
+    border: 1px solid rgb(105, 50, 15);
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
