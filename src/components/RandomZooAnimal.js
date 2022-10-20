@@ -1,8 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {getAnimal} from '../actions/index.actions';
 
 const RandomZooAnimal = (props) => {
-    const {animal, isFetching, error} = props
+    const {animal, isFetching, error, getAnimal} = props
 
     if(isFetching) return <h3>Your Animal is Being Shipped...</h3>
 
@@ -17,7 +18,7 @@ const RandomZooAnimal = (props) => {
 
     return(
         <div>
-            <button>Get New Animal</button>
+            <button onClick={getAnimal}>Get New Animal</button>
             <div>
                 <h2>{animal.name}</h2>
                 <h4>(<i>{animal.latin_name}</i>)</h4>
@@ -46,4 +47,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {})(RandomZooAnimal);
+export default connect(mapStateToProps, {getAnimal})(RandomZooAnimal);

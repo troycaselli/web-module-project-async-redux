@@ -1,13 +1,17 @@
-export const GET_ANIMAL = 'GET_ANIMAL';
+import axios from 'axios';
+
 export const SET_IS_FETCHING_ANIMAL = 'SET_IS_FETCHING_ANIMAL';
 export const GET_ANIMAL_SUCCESS = 'GET_ANIMAL_SUCCESS';
 export const GET_ANIMAL_FAILURE = 'GET_ANIMAL_FAILURE';
 
 export const getAnimal = () => dispatch => {
-    return({type: GET_ANIMAL});
+    dispatch(setFetchAnimal(true));
+    axios.get('https://zoo-animal-api.herokuapp.com/animals/rand')
+        .then(res => dispatch(getAnimalSuccess(res.data)))
+        .catch(err => dispatch(getAnimalFailure(err.message)));
 }
 
-export const setFetchAnmial = (isFetching) => {
+export const setFetchAnimal = (isFetching) => {
     return({type: SET_IS_FETCHING_ANIMAL, payload: isFetching});
 }
 
