@@ -1,10 +1,11 @@
 import React from 'react';
+import RandomZooAnimal from './components/RandomZooAnimal';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      Async Redux Project
+      <RandomZooAnimal />
     </div>
   );
 }

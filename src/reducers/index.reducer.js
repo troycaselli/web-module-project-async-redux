@@ -21,11 +21,12 @@ const initialState = {
     error: ''
 }
 
-export const reducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
     switch(action.type) {
         default:
             return state;
     }
 }
 
+export default reducer;
 // https://zoo-animal-api.herokuapp.com/animals/rand
