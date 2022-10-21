@@ -1,14 +1,17 @@
+/* Header styling */
 header {
     /* Photo by <a href="https://unsplash.com/@eelco_bohtlingk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eelco Böhtlingk</a> on <a href="https://unsplash.com/s/photos/wilderness?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    */
     background-image: url('../images/wilderness.jpg');
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    min-height: 50vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    /* text-align: center; */
     color: black;
 }
 header h1,
@@ -45,6 +48,7 @@ header button {
     background-color: rgb(105, 50, 15);
     color: #e7f3cf;
     transition: 0.5s;
+    margin-bottom: 1%;
 }
 header button:hover {
     background-color: #e7f3cf;
@@ -53,8 +57,45 @@ header button:hover {
     transform: scale(1.2);
 }
 
-
-
+/* Card styling */
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#card-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin: 3% 0;
+    background-color: rgb(172, 156, 142);
+    box-shadow: 10px 10px 20px black;
+    border-radius: 20px;
+}
+#card-container img {
+    width: 90%;
+    border-radius: 30px;
+    padding: 2%;
+}
+#card-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+hr {
+    width: 60%;
+    color: grey;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.half {
+    width: 30%;
+    font-size: 1rem;
+}
 
 
 
