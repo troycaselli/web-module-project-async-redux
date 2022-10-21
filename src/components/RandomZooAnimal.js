@@ -39,7 +39,7 @@ const RandomZooAnimal = (props) => {
                 </div>
                 <img src={animal.image_link} alt={animal.name} />
                 <h3>Details</h3>
-                <hr />  
+                <hr />
                 <div className='wrapper'>
                     <div className='half'>
                         <p><b>Class: </b>{animal.animal_type}</p>

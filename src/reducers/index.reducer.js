@@ -24,9 +24,9 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch(action.type) {
         case SET_IS_FETCHING_ANIMAL:
-            return {...state, isFetching: action.payload}
+            return {...state, isFetching: action.payload, error: ''}
         case GET_ANIMAL_SUCCESS:
-            return {...state, isFetching: false, animal: action.payload}
+            return {...state, isFetching: false, animal: action.payload, error: ''}
         case GET_ANIMAL_FAILURE:
             return {...state, isFetching: false, error: action.payload}
         default:
